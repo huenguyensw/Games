@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Scissor game</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/uppgift5.css">
+
+</html>
+
+<body>
+    <div class="container">
+        <h2 class="container-title">Rock Paper Scissors game</h2>
+        <div class="round">
+            <span class = 'round'>ROUND</span>
+            <span id="roundID">0</span>
+        </div>    
+        
+        <!----Result area----->
+
+        <section class="result-screen">
+            <div class="result">
+                <span><b>Your score:</b></span>
+                <span id="userScore">0</span>
+            </div>
+            <div class="result">
+                <span><b>Computer's score:</b></span>
+                <span id="computerScore">0</span>
+            </div>
+        </section>
+
+        <!----User selection area---->
+
+        <div class="choose-area">
+            <h3 class="title">Your choice</h3>
+            <div class="content">
+                <i id="user-rock" class="fa fa-hand-grab-o" onclick="getUserValue(id)"></i>
+                <i id="user-scissor" class="fa fa-hand-peace-o" onclick="getUserValue(id)"></i>
+                <i id="user-paper" class="fa fa-hand-paper-o" onclick="getUserValue(id)"></i>
+            </div>
+        </div>
+
+        <!----Computer selection area---->
+
+        <div class="choose-area">
+            <section class="computer-title">
+                <h3 class="title">Computer's choice</h3>
+                <!-- <button onclick="getComputerValue()" class="btn">Click!</button> -->
+            </section>
+            <div class="content">
+                <i id="computer-rock" class="fa fa-hand-grab-o"></i>
+                <i id="computer-scissor" class="fa fa-hand-peace-o"></i>
+                <i id="computer-paper" class="fa fa-hand-paper-o"></i>
+            </div>
+        </div>
+
+        <button onclick="winner()" class="play-button">Play</button>
+
+        
+    </div>
+    <script src="js\uppgift5.js"></script>
+</body>
