@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Memory game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/memorygame.css">
+</head>
+
+<body>
+    <main>
+        <content class="content-container">
+            <section class="game-header">
+                <span id="moves"><b>Moves:</b></span>
+                <span id="time-count">00:00:00</span>
+                <button onclick="myFunction()" id="playagain">Play again</button>
+            </section>
+            <section class="game-container">
+                <button onclick="showImage('box1')" class='box' id="box1"></button>
+                <button onclick="showImage('box2')" class='box' id="box2"></button>
+                <button onclick="showImage('box3')" class='box' id="box3"></button>
+                <button onclick="showImage('box4')" class='box' id="box4"></button>
+                <button onclick="showImage('box5')" class='box' id="box5"></button>
+                <button onclick="showImage('box6')" class='box' id="box6"></button>
+                <button onclick="showImage('box7')" class='box' id="box7"></button>
+                <button onclick="showImage('box8')" class='box' id="box8"></button>
+                <button onclick="showImage('box9')" class='box' id="box9"></button>
+                <button onclick="showImage('box10')" class='box' id="box10"></button>
+                <button onclick="showImage('box11')" class='box' id="box11"></button>
+                <button onclick="showImage('box12')" class='box' id="box12"></button>
+                <button onclick="playFunction()" id="play">PLAY</button>
+            </section>
+            <!-- <section class="game-mode">
+                <p>Game Mode:</p>
+                <button>Width A Friend</button>
+                <button>Against Computer</button>
+            </section> -->
+        </content>
+        <!-- <aside class="sidebar-container">
+            <p><b>INSTRUCTION</b></p>
+        </aside> -->
+    </main>
+    <script src="js/memorygame.js"></script>
+</body>
+</html>
